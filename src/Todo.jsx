@@ -26,7 +26,7 @@ const Todo = () => {
             const token = await user.getIdToken();
             return token;
         } else {
-            navigate('/');
+            navigate('/login');
         }
     };
 
@@ -71,7 +71,7 @@ const Todo = () => {
             });
             if (res.status === 401) {
                 setError("Unauthorized access. Please log in again.");
-                navigate('/');
+                navigate('/login');
             } else if (res.ok) {
                 const data = await res.json();
                 setTodos(data);
@@ -152,7 +152,7 @@ const Todo = () => {
     const handleSignOut = () => {
         signOut(auth)
             .then(() => {
-                navigate('/');
+                navigate('/login');
             });
     };
 

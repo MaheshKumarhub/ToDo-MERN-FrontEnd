@@ -14,7 +14,7 @@ const Login = () => {
     const onLoggedIn = () => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
-                navigate('/todo');
+                navigate('/');
             }
         });
     };
