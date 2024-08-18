@@ -15,7 +15,7 @@ const Todo = () => {
     const [editTitle, setEditTitle] = useState("");
     const [editDescription, setEditDescription] = useState("");
 
-    const apiUrl = "https://todo-mern-backend-u5oy.onrender.com";
+    const apiUrl = "https://todo-mern-vmue.onrender.com";
     const navigate = useNavigate();
 
     // Retrieve Firebase Auth token
